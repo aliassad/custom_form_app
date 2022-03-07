@@ -24,4 +24,5 @@ class ExtraInfo(models.Model):
     favorite_editor = models.CharField(
         verbose_name="Favorite Editor",
         choices=FAVORITE_EDITOR,
+        max_length=100
     )
