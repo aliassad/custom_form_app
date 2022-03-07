@@ -2,7 +2,7 @@ from django.conf import settings
 from django.db import models
 
 # Backwards compatible settings.AUTH_USER_MODEL
-USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User');
+USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
 
 
 class ExtraInfo(models.Model):
@@ -18,7 +18,7 @@ class ExtraInfo(models.Model):
     )
 
     favorite_movie = models.CharField(
-        verbose_name="Fav Glick",
+        verbose_name="Fav Movie",
         max_length=100
     )
     favorite_editor = models.CharField(
